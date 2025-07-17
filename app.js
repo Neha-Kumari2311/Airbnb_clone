@@ -85,7 +85,6 @@ app.use((req, res, next) => {
   res.locals.error = req.flash("error");
   res.locals.currUser = req.user;
   next();
-  console.log(res.locals.success);
 });
 
 app.use("/listings", listingsRouter);
